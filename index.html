@@ -6,7 +6,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-    <title>Beethoven 32 Sonatas</title>
+    <title>Evgeny's Apps</title>
 
     <style>
         html,
@@ -17,20 +17,24 @@
 
         body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 24px;
             background: #111827;
             font-family: Arial, sans-serif;
         }
 
-        .beethoven-button {
+        .app-button {
             display: inline-block;
+            min-width: 340px;
             padding: 24px 42px;
             border-radius: 14px;
             background: white;
             color: #111827;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: bold;
+            text-align: center;
             text-decoration: none;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
             transition:
@@ -38,7 +42,7 @@
                 box-shadow 0.15s ease;
         }
 
-        .beethoven-button:hover {
+        .app-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
         }
@@ -47,10 +51,17 @@
 
 <body>
     <a
-        class="beethoven-button"
+        class="app-button"
         href="http://85.130.232.197:8002"
     >
         Beethoven 32 Sonatas
+    </a>
+
+    <a
+        class="app-button"
+        href="http://85.130.232.197:8001"
+    >
+        Lens App Demo
     </a>
 </body>
 </html>
