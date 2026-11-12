@@ -43,6 +43,15 @@
             transform: translateY(-3px);
             box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
         }
+
+        @media (max-width: 480px) {
+            .app-button {
+                min-width: 0;
+                width: 80%;
+                padding: 20px 16px;
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
 
@@ -59,6 +68,13 @@
         href="https://85.130.232.197/score_site/index.html"
     >
         Score Site
+    </a>
+
+    <a
+        class="app-button"
+        href="https://85.130.232.197/site_score_professional/index.html"
+    >
+        Score Professional
     </a>
 </body>
 </html>
